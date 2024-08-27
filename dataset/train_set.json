@@ -1,0 +1,16 @@
+[
+    {
+        "id": "0",
+        "image": "/data1/home/ycx/ycxGit/MiniCPM-V-2_6-OD/dataset/images/demo.jpg",
+        "conversations": [
+            {
+                "content": "<image>\nPlease help me identify the construction machinery in the picture, and mark their exact locations.",
+                "role": "user"
+            },
+            {
+                "content": "<ref>挖掘机<box>204</box><box>641</box><box>500</box><box>895</box></ref><ref>挖掘机<box>219</box><box>567</box><box>462</box><box>774</box></ref>",
+                "role": "assistant"
+            }
+        ]
+    }
+]

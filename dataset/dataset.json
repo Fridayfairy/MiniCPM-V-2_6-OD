@@ -1,0 +1,27 @@
+{
+    "data": {
+        "/data1/home/ycx/ycxGit/MiniCPM-V-2_6-OD/dataset/images/demo.jpg": {
+            "gt": [
+                {
+                    "text": "挖掘机",
+                    "bbox": [
+                        204,
+                        641,
+                        500,
+                        895
+                    ]
+                },
+                {
+                    "text": "挖掘机",
+                    "bbox": [
+                        219,
+                        567,
+                        462,
+                        774
+                    ]
+                }
+            ],
+            "image_path": "/data1/home/ycx/ycxGit/MiniCPM-V-2_6-OD/dataset/images/demo.jpg"
+        }
+    }
+}
