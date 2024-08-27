@@ -6,8 +6,9 @@ GitHub开源地址：https://github.com/Fridayfairy/MiniCPM-V-2_6-OD
 > 
 > 日期：2024.08
 
-1. # 数据处理
-    
+# 1. 数据处理
+---
+
 
 ## 1.1 数据准备
 
@@ -21,7 +22,7 @@ GitHub开源地址：https://github.com/Fridayfairy/MiniCPM-V-2_6-OD
 
 示例中，读取的路径是：./dataset/Annotations/' # 替换为你的XML文件所在目录，
 
-```JSON
+```txt
 <annotation>
     <folder>images</folder>
     <filename>demo.jpg</filename>
@@ -134,12 +135,13 @@ format_answer += "<ref>{text}<box>{x1}</box><box>{y1}</box><box>{x2}</box><box>{
 
 ![](https://bq82ox0och.feishu.cn/space/api/box/stream/download/asynccode/?code=YjgxYjVjZDA2YjNmZjYyMjAyNDJiNjc2NDk3OTRkMjVfWm5qMGY4V3hZUWw3WlNBNXgwRzZZMThrcmIyM1N6TFhfVG9rZW46UUI5YWI0RFpyb3dzdzl4OERvWGMyd3BnbktmXzE3MjQ3MzcxNTI6MTcyNDc0MDc1Ml9WNA)
 
-2. # 任务微调
-    
+# 2. 任务微调
+---
+
 
 在finetune文件下，修改finetune_lora.sh文件中项目路径。其他lora参数视训练环境进行调整。
 
-```JSON
+```bash
 MODEL="/data1/home/ycx/workspace/HF/MiniCPM-V-2_6" # 从HuggingFace 或者魔塔下载的官方 MiniCPM-V-2_6路径
 DATA="/data1/home/ycx/ycxGit/MiniCPM-V-2_6-OD/dataset/train_set.json" # 训练集路径
 EVAL_DATA="/data1/home/ycx/ycxGit/MiniCPM-V-2_6-OD/dataset/test_set.json" # 测试集路径
@@ -151,8 +153,9 @@ EVAL_DATA="/data1/home/ycx/ycxGit/MiniCPM-V-2_6-OD/dataset/test_set.json" # 测�
 bash finetune_lora.sh
 ```
 
-3. # 模型合并
-    
+# 3. 模型合并
+---
+
 
 在finetune文件下，修改merge_lora.py文件中项目路径。
 
@@ -169,8 +172,9 @@ merge_path="./MiniCPM-V-2_6-OD" # 希望将lora合并到主模型后的保存地
 copy_files = ['image_processing_minicpmv.py', 'preprocessor_config.json', 'processing_minicpmv.py']
 ```
 
-4. # 效果展示
-    
+# 4. 效果展示
+---
+
 
 使用web服务启动server，选择图片，提示：“执行目标检测任务”，
 
