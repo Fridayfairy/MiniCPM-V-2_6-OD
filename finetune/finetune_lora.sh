@@ -6,11 +6,10 @@ NODE_RANK=0
 MASTER_ADDR=localhost
 MASTER_PORT=6001
 
-MODEL="/data1/home/ycx/workspace/HF/MiniCPM-V-2_6" # or openbmb/MiniCPM-V-2, openbmb/MiniCPM-Llama3-V-2_5
-# ATTENTION: specify the path to your training data, which should be a json file consisting of a list of conversations.
-# See the section for finetuning in README for more information.
-DATA="/data1/home/ycx/ycxGit/MiniCPM-V-2_6-OD/dataset/train_set.json"
-EVAL_DATA="/data1/home/ycx/ycxGit/MiniCPM-V-2_6-OD/dataset/test_set.json"
+MODEL="/data1/home/ycx/workspace/HF/MiniCPM-V-2_6" # 从HuggingFace 或者魔塔下载的官方 MiniCPM-V-2_6路径
+DATA="/data1/home/ycx/ycxGit/MiniCPM-V-2_6-OD/dataset/train_set.json" # 训练集路径
+EVAL_DATA="/data1/home/ycx/ycxGit/MiniCPM-V-2_6-OD/dataset/test_set.json" # 测试集路径
+
 LLM_TYPE="qwen2" 
 # if use openbmb/MiniCPM-V-2, please set LLM_TYPE=minicpm
 #if use openbmb/MiniCPM-Llama3-V-2_5, please set LLM_TYPE=llama3
